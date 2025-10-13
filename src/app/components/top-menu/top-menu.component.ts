@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Directive, viewChild } from '@angular/core';
+import { MatMenuModule, MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-top-menu',
