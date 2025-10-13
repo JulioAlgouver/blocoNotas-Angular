@@ -2,21 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { TopMenuComponent } from './components/top-menu/top-menu.component';
-import { BtnMenuComponent } from './components/btn-menu/btn-menu.component';
-import { TextboxAreaComponent } from './components/textbox-area/textbox-area.component';
+import { ComponentsModule } from './components/ccomponents.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopMenuComponent,
-    BtnMenuComponent,
-    TextboxAreaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ComponentsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
