@@ -6,14 +6,21 @@ import { MatSelect } from "@angular/material/select";
 
 import { MatFormField, MatLabel } from "@angular/material/form-field";
 import {MatMenuModule} from '@angular/material/menu';
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
     declarations: [
         TopMenuComponent,
         BtnMenuComponent,
-        TextboxAreaComponent
+        TextboxAreaComponent,
     ],
-    imports: [MatSelect, MatFormField, MatLabel,MatMenuModule],
+    imports: [MatSelect, 
+              MatFormField, 
+              MatLabel, 
+              MatMenuModule, 
+              BrowserModule,
+              FormsModule],
     exports:[        
         TopMenuComponent,
         BtnMenuComponent,

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './textbox-area.component.scss'
 })
 export class TextboxAreaComponent {
+  texto = '';
+  corTexto = 'black';
 
+  mudarCor(cor: string) {
+    this.corTexto = cor;
+  }
 }

@@ -5,11 +5,11 @@
     <button title="Aumentar Fonte">Font +</button>
     <button title="Dimiuir Fonte">Font -</button>
     
-    <select title="Cor da Fonte">
-        <option>Preto</option>
-        <option>Azul</option>
-        <option>Vermelho</option>
-        <option>Amarelo</option>
+    <select title="Cor da Fonte" (change)="mudarCor($event)">
+        <option value="black">Preto</option>
+        <option value="blue">Azul</option>
+        <option value="red">Vermelho</option>
+        <option value="green">Verde</option>
     </select>
     
     <select title="Tamanho da Fonte">
@@ -26,4 +26,5 @@
     <button title="Alinhar à Esqueda">Esquerda</button>
     <button title="Alinhar Centralizado">Centralizado</button>
     <button title="Alinhar à Direita">Direita</button>
+    <button title="Justificado">Justificado</button>
 </div>

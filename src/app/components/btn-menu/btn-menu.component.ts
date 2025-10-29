@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import {MatSelectModule} from '@angular/material/select';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-btn-menu',
@@ -7,5 +6,14 @@ import {MatSelectModule} from '@angular/material/select';
   styleUrl: './btn-menu.component.scss'
 })
 export class BtnMenuComponent {
+  @Output() comando = new EventEmitter<string>();
+  @Output() corSelecionada = new EventEmitter<string>();
+  @Output() tamanhoSelecionado = new EventEmitter<number>();
 
+  mudarCor(event: Event){
+    const select = event.target as HTMLSelectElement | null;
+    if(select){
+      this.corSelecionada.emit(select.value);
+    }
+  }
 }

@@ -1,1 +1,9 @@
-<textarea></textarea>
+  <div class="btn-menu">
+    <app-btn-menu (corSelecionada)="mudarCor($event)"/>
+  </div>
+<div class="textbox-area">
+  <textarea
+    [(ngModel)]="texto"
+    [ngStyle]="{ color: corTexto }"
+  ></textarea>
+</div>
