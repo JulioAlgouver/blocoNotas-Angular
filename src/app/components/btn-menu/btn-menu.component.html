@@ -2,25 +2,25 @@
     <button title="Negrito">B</button>
     <button title="Italico">I</button>
     <button title="Sublinhado">S</button>
-    <button title="Aumentar Fonte">Font +</button>
+    <button (click)="onAumentarFonte()" title="Aumentar Fonte">Font +</button>
     <button title="Dimiuir Fonte">Font -</button>
     
     <select title="Cor da Fonte" (change)="mudarCor($event)">
-        <option value="black">Preto</option>
-        <option value="blue">Azul</option>
-        <option value="red">Vermelho</option>
-        <option value="green">Verde</option>
+        <option value="black" style="background-color: black; color: whitesmoke;">Preto</option>
+        <option value="blue" style="background-color: blue; color: whitesmoke;">Azul</option>
+        <option value="red" style="background-color: red; color: whitesmoke;">Vermelho</option>
+        <option value="green" style="background-color: green; color: whitesmoke;">Verde</option>
     </select>
     
-    <select title="Tamanho da Fonte">
-        <option>10</option>
-        <option>12</option>
-        <option>14</option>
-        <option>16</option>
-        <option>18</option>
-        <option>20</option>
-        <option>22</option>
-        <option>24</option>
+    <select title="Tamanho da Fonte" (change)="mudarTamanhoFonte($event)">
+        <option value=10>10</option>
+        <option value=12>12</option>
+        <option value=14>14</option>
+        <option value=16>16</option>
+        <option value=18>18</option>
+        <option value=20>20</option>
+        <option value=22>22</option>
+        <option value=24>24</option>
     </select>
     
     <button title="Alinhar à Esqueda">Esquerda</button>

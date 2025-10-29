@@ -1,22 +1,21 @@
 .btn-menu{
     position: relative;
     width: 100%;
-    height: 10%;
+    height: auto;
     align-content: center;
     box-shadow: gray 1px 1px 3px;
 }
 
 .textbox-area{
     width: 100%;
-    height: 80%;
+    height: 75%;
     display: flex;
     justify-content: center;
-    box-shadow: gray 1px 1px 3px;
 }
 
 textarea{
     width: 80vw;
-    height: 90%;
+    height: 95%;
     border-radius: 1vw;
     padding: 1vw;
     margin-top: 1vw;

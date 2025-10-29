@@ -7,9 +7,18 @@ import { Component } from '@angular/core';
 })
 export class TextboxAreaComponent {
   texto = '';
+  tamanhoFonte = 10;
   corTexto = 'black';
 
   mudarCor(cor: string) {
     this.corTexto = cor;
+  }
+
+  mudarTamanhoFonte(tamFonte:number){
+    this.tamanhoFonte = tamFonte;
+  }
+
+  aumentarFonte() {
+    this.tamanhoFonte += 2;
   }
 }

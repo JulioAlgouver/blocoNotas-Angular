@@ -1,9 +1,15 @@
   <div class="btn-menu">
-    <app-btn-menu (corSelecionada)="mudarCor($event)"/>
+    <app-btn-menu 
+      (corSelecionada)="mudarCor($event)"
+      (tamanhoSelecionado)="mudarTamanhoFonte($event)"
+      (aumentarFonte)="aumentarFonte()"/>
   </div>
 <div class="textbox-area">
   <textarea
     [(ngModel)]="texto"
-    [ngStyle]="{ color: corTexto }"
+    [ngStyle]="{ 
+      color: corTexto,
+      'font-size': tamanhoFonte + 'px'  
+    }"
   ></textarea>
 </div>
