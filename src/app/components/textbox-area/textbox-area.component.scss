@@ -1,7 +1,7 @@
 .btn-menu{
     position: relative;
     width: 100%;
-    height: auto;
+    height:auto;
     align-content: center;
     box-shadow: gray 1px 1px 3px;
 }
@@ -14,10 +14,13 @@
 }
 
 textarea{
-    width: 80vw;
+    position: relative;
+    width: 80%;
     height: 95%;
     border-radius: 1vw;
-    padding: 1vw;
-    margin-top: 1vw;
+    margin-top: 1%;
     box-shadow: gray 2px 2px 3px ;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
