@@ -11,6 +11,10 @@ export class BtnMenuComponent {
   @Output() corSelecionada = new EventEmitter<string>();
   @Output() tamanhoSelecionado = new EventEmitter<number>();
   @Output() aumentarFonte = new EventEmitter<void>()
+  @Output() diminuirFonte = new EventEmitter<void>()
+  @Output() negrito = new EventEmitter<void>();
+  @Output() italico = new EventEmitter<void>();
+  @Output() sublinhado = new EventEmitter<void>();
 
   mudarCor(event: Event){
     const selectCor = event.target as HTMLSelectElement | null;
@@ -28,5 +32,21 @@ export class BtnMenuComponent {
 
   onAumentarFonte(){
     this.aumentarFonte.emit();
+  }
+
+  onDiminuirFonte(){
+    this.diminuirFonte.emit()
+  }
+
+  setNegrito(){
+    this.negrito.emit()
+  }
+
+  setItalico(){
+    this.italico.emit()
+  }
+
+  setUnderscore(){
+    this.sublinhado.emit()
   }
 }

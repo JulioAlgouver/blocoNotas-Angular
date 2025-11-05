@@ -1,9 +1,9 @@
 <div>
-    <button title="Negrito">B</button>
-    <button title="Italico">I</button>
-    <button title="Sublinhado">S</button>
+    <button (click)="setNegrito()" title="Negrito">B</button>
+    <button (click)="setItalico()" title="Italico">I</button>
+    <button (click)="setUnderscore()" title="Sublinhado">S</button>
     <button (click)="onAumentarFonte()" title="Aumentar Fonte">Font +</button>
-    <button title="Dimiuir Fonte">Font -</button>
+    <button (click)="onDiminuirFonte()" title="Dimiuir Fonte">Font -</button>
     
     <select title="Cor da Fonte" (change)="mudarCor($event)">
         <option value="black" style="background-color: black; color: whitesmoke;">Preto</option>
