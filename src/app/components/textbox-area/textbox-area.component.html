@@ -7,6 +7,10 @@
       (negrito)="toggleNegrito()"
       (italico)="toggleItalico()"
       (sublinhado)="toggleSublinhado()"
+      (textoDireita)="rightTextAlign()"
+      (textoEsquerda)="leftTextAlign()"
+      (textoCentro)="centerTextAlign()"
+      (textoJustificado)="justifyTextAlign()"      
       />      
   </div>
 <div class="textbox-area">
@@ -18,6 +22,7 @@
       'font-weight': isBold ? 'bold' : 'normal',
       'font-style': isItalic ? 'italic' : 'normal',
       'text-decoration': isUnderline ? 'underline' : 'none',
+      'text-align': textAlign
     }"
   ></textarea>
 </div>

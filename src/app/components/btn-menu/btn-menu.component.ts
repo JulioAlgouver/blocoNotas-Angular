@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, output, Output } from '@angular/core';
 
 @Component({
   selector: 'app-btn-menu',
@@ -15,6 +15,10 @@ export class BtnMenuComponent {
   @Output() negrito = new EventEmitter<void>();
   @Output() italico = new EventEmitter<void>();
   @Output() sublinhado = new EventEmitter<void>();
+  @Output() textoCentro = new EventEmitter<void>()
+  @Output() textoEsquerda = new EventEmitter<void>();
+  @Output() textoDireita = new EventEmitter<void>();
+  @Output() textoJustificado = new EventEmitter<void>();
 
   mudarCor(event: Event){
     const selectCor = event.target as HTMLSelectElement | null;
@@ -48,5 +52,21 @@ export class BtnMenuComponent {
 
   setUnderscore(){
     this.sublinhado.emit()
+  }
+
+  alinharEsquerda(){
+    this.textoEsquerda.emit()
+  }
+
+  alinharCentralizado(){
+    this.textoCentro.emit()
+  }
+
+  alinharDireita(){
+    this.textoDireita.emit()
+  }
+
+  alinharJustificado(){
+    this.textoJustificado.emit()
   }
 }
