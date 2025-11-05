@@ -1,9 +1,9 @@
 <div>
-    <button (click)="setNegrito()" title="Negrito">B</button>
-    <button (click)="setItalico()" title="Italico">I</button>
-    <button (click)="setUnderscore()" title="Sublinhado">S</button>
-    <button (click)="onAumentarFonte()" title="Aumentar Fonte">Font +</button>
-    <button (click)="onDiminuirFonte()" title="Dimiuir Fonte">Font -</button>
+    <button (click)="setNegrito()" title="Negrito"><img src="assets/negrito.png"/></button>
+    <button (click)="setItalico()" title="Italico"><img src="assets/italico.png"/></button>
+    <button (click)="setUnderscore()" title="Sublinhado"><img src="assets/sublinhado.png"/></button>
+    <button (click)="onAumentarFonte()" title="Aumentar Fonte"><img src="assets/fonte+.png"/></button>
+    <button (click)="onDiminuirFonte()" title="Dimiuir Fonte"><img src="assets/fonte-.png"/></button>
     
     <select title="Cor da Fonte" (change)="mudarCor($event)">
         <option value="black" style="background-color: black; color: whitesmoke;">Preto</option>
@@ -28,8 +28,8 @@
         <option value=24>24</option>
     </select>
     
-    <button (click)="alinharEsquerda()" title="Alinhar à Esqueda">Esquerda</button>
-    <button (click)="alinharCentralizado()" title="Alinhar Centralizado">Centralizado</button>
-    <button (click)="alinharDireita()" title="Alinhar à Direita">Direita</button>
-    <button (click)="alinharJustificado()" title="Justificado">Justificado</button>
+    <button (click)="alinharEsquerda()" title="Alinhar à Esqueda"><img src="assets/alinhamento-a-esquerda.png"/></button>
+    <button (click)="alinharCentralizado()" title="Alinhar Centralizado"><img src="assets/alinhamento-central.png"/></button>
+    <button (click)="alinharDireita()" title="Alinhar à Direita"><img src="assets/alinhamento-a-direita.png"/></button>
+    <button (click)="alinharJustificado()" title="Justificado"><img src="assets/justificar-texto.png"/></button>
 </div>
